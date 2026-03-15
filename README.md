@@ -30,11 +30,6 @@ This project is built using the MERN Stack with a React frontend and Express bac
 - HTML5
 - CSS3
 - JavaScript
-
-
-### Database
-- MongoDB
-
 ---
 
 
