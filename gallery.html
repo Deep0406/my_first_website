@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Travel India</title>
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="hero">
+        <header class="header">
+            <nav>
+                <h2 class="logo">Travel-India</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cat.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="guide.html">Guide&Rules</a></li>
+                    <li><a href="login.html">Login/Sign-Up</a></li>
+                </ul>
+                <form class="search-bar">
+                    <input type="text" placeholder="Search Places">
+                    <button type="submit">Search</button>
+                </form>
+            </nav>
+        </header>
+
+        <div class="body">
+            <section class="gallery-section">
+                <h1>Explore India Through Pictures</h1>
+                <p>Discover the beauty of India's landscapes, heritage, festivals, and culture.</p>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="/all/taj-mahal.jpg" alt="Taj Mahal"></div>
+                    <div class="gallery-item"><img src="/all/manali.jpg" alt="Himalayas"></div>
+                    <div class="gallery-item"><img src="/all/FESTIVALS/holi.jpg" alt="Holi Festival"></div>
+                    <div class="gallery-item"><img src="/all/andaman.jpg" alt="Kerala Backwaters"></div>
+                    <div class="gallery-item"><img src="/all/shimla.jpg" alt="Rajasthan Fort"></div>
+                    <div class="gallery-item"><img src="/all/FESTIVALS/indianfood.jpg" alt="Indian Food"></div>
+                </div>
+            </section>
+
+            <div id="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" src="">
+            </div>
+        </div>
+
+        <footer class="footer">
+            Tours & Travels &copy; 2025. All Rights Reserved.
+        </footer>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".gallery-item img").click(function() {
+                $("#lightbox").fadeIn();
+                $(".lightbox-content").attr("src", $(this).attr("src"));
+            });
+    
+            // Close when clicking outside the image or on the close button
+            $("#lightbox, .close").click(function(event) {
+                if (event.target !== $(".lightbox-content")[0]) {
+                    $("#lightbox").fadeOut();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

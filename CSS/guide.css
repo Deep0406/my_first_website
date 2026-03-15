@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure the entire body is covered */
+.hero {
+    background: url('/all/travel-categories.jpeg') no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+    width: 100%;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo:hover{
+    cursor: no-drop;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ff4436;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+.search-bar input::placeholder {
+    color: white;
+}
+
+.search-bar button {
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background: #ff4436;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    position: relative; /* Keeps it below content */
+}
+
+/* Body Section */
+.body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+/* Guide Section */
+.guide-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.guide-section h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+.guide-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Rules List */
+.rules-container {
+    text-align: left;
+}
+
+.rules-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rules-container ul li {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.rules-container ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #ffcc00;
+}
+
+.rules-container ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.rules-container ol li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.rules-container h2 {
+    color: #ff4436;
+    text-align: center;
+    font-size: 22px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+
