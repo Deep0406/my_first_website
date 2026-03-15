@@ -1,5 +1,5 @@
 ## 📂 Project Structure
-# 🇮🇳 Travel India
+# In Travel India
 
 Travel India is a web application that helps users explore different travel destinations across India.  
 The website provides information about popular places such as mountains, beaches, heritage sites, and spiritual destinations.
@@ -27,14 +27,10 @@ This project is built using the MERN Stack with a React frontend and Express bac
 ## 🛠 Technologies Used
 
 ### Frontend
-- React.js
 - HTML5
 - CSS3
 - JavaScript
 
-### Backend
-- Node.js
-- Express.js
 
 ### Database
 - MongoDB
